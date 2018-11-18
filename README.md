@@ -14,4 +14,4 @@ In order to enable testing, jasmine framework is linked in the indexl.html file.
 * <a href='https://github.com/hotboy01/simi-FEND-feadreader-testing/blob/master/css/style.css'>style.css</a>
 * <a href='https://github.com/hotboy01/simi-FEND-feadreader-testing/blob/master/jasmine/spec/feedreader.js'>feedreader.js</a>
 
-as jasmine libery, app.js, index.html codes were supplies by Udacity 
+as jasmine libery, app.js, index.html, style.css codes were supplies by Udacity 
