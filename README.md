@@ -6,7 +6,7 @@ This project comprise of a web-based application that reads RSS feeds. That incl
 ## Running the application
 You can run this application by 
 * cloning this project
-* then open the index.html file in a browswer.
+* then open the index.html file in a browser.
 
 ## Dependencies
 The application uses Googles feed reader API, Handlebars template processor and jQuery.
