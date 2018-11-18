@@ -6,7 +6,7 @@ This project comprise of a web-based application that reads RSS feeds. That incl
 
 ## Running the application
 
-* clone this project
+* clone this repository
 * then open the index.html file in a browser.
 
 ## Dependencies
