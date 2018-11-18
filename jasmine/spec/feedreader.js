@@ -122,10 +122,10 @@ describe('New Feed Selection', function() {
                loadFeed(1, function () {
                   secondFeed = feed.innerHTML(); // content of feed container 
                   done();
-     });
-  });
-})
-        
+               });
+            });
+         });
+});        
         /* A test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          */
