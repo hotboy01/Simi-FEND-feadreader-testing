@@ -5,7 +5,7 @@ This project comprise of a web-based application that reads RSS feeds. That incl
 
 ## Running the application
 * You can run this application by cloning this project and openining the index.html file in a browswer.
-* You can also run the application by clicking <a href=' https://hotboy01.github.io/simi-FEND-feadreader-testing/'>here</a>.
+* You can also run the application by clicking <a href='https://hotboy01.github.io/simi-FEND-feadreader-testing/'>here</a>.
 
 ## Dependencies
 In order to enable testing jasmine framework is linked in the indexl.html file
