@@ -8,8 +8,10 @@ This project comprise of a web-based application that reads RSS feeds. That incl
 * You can also run the application by clicking <a href='https://hotboy01.github.io/simi-FEND-feadreader-testing/'>here</a>.
 
 ## Dependencies
-In order to enable testing jasmine framework is linked in the indexl.html file, other files include:
+The application uses Googles feed reader API, Handlebars template processor and jQuery.
+In order to enable testing, jasmine framework is linked in the indexl.html file. Other files include required includes:
 * <a href='https://github.com/hotboy01/simi-FEND-feadreader-testing/blob/master/js/app.js'>app.js</a>
 * <a href='https://github.com/hotboy01/simi-FEND-feadreader-testing/blob/master/css/style.css'>style.css</a>
 * <a href='https://github.com/hotboy01/simi-FEND-feadreader-testing/blob/master/jasmine/spec/feedreader.js'>feedreader.js</a>
 
+as jasmine libery, app.js, index.html codes were supplies by Udacity 
