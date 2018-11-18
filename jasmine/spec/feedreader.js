@@ -109,40 +109,29 @@ describe('Initial Entries', function() {
     
 describe('New Feed Selection', function() {
     const feed = document.querySelector('.feed');
-    const feedOne = []; // the first feeds content is stored in this array
+    let firstFeed,
+        secondFeed;
         
-        /* loadFeed() is asynchronous so this test will require
+    /* loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-        
-        beforeEach(function(done) { // beforeEach function that esures everything in it runs before the expect statement
-            loadFeed(0); // the first feed is loaded
-            
-            /* The feed's children element is converted to an array list
-             * and each entry is looped over
-             * pushing the innerText to the first feeds array.
-             */
-            
-            Array.from(feed.children).forEach(function(entry) { 
-                feedOne.push(entry.innerText);
-            });
-            loadFeed(1, done); // a new feed is loaded 
-        });
+    
+         beforeEach(function(done) { // beforeEach function that esures everything in it runs before the expect statement
+            loadFeed(0, function () {
+               firstFeed = feed.innerHTML(); // content of feed container
+               loadFeed(1, function () {
+                  secondFeed = feed.innerHTML(); // content of feed container 
+                  done();
+     });
+  });
+})
         
         /* A test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          */
         
         it('content changes', function() {
-            
-            /* The feed's children element is converted to an array list
-             * and each entry is looped over,
-             * an index parameter is used to check the first feed against the new feed
-             */
-            
-            Array.from(feed.children).forEach(function(entry, index) {
-                expect(entry.innerText === feedOne[index]).toBe(false); // expectation of the first and new feed's content to be different
-            });                                                           
+            expect(firstFeed).not.toEqual(secondFeed); // expectation of the first and new feed's content to be different                                                        
         });
 });
 }());
