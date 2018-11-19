@@ -108,24 +108,23 @@ describe('Initial Entries', function() {
     /* A test suite named "New Feed Selection" */
     
 describe('New Feed Selection', function() {
-    const feed = document.querySelector('.feed');
-    let firstFeed,
-        secondFeed;
+    let firstFeed;
+    let secondFeed;
         
     /* loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
     
-         beforeEach(function(done) { // beforeEach function that esures everything in it runs before the expect statement
-            loadFeed(0, function () {
-               firstFeed = feed.innerHTML(); // content of feed container
-               loadFeed(1, function () {
-                  secondFeed = feed.innerHTML(); // content of feed container 
-                  done();
-               });
+    beforeEach(function(done) { // beforeEach function that esures everything in it runs before the expect statement
+        loadFeed(0, function () {
+            firstFeed =  $('.feed').html(); // content of feed container
+            loadFeed(1, function () {
+                secondFeed =  $('.feed').html(); // content of feed container 
+                done();
             });
-         });
-});        
+        });
+    });
+       
         /* A test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          */
